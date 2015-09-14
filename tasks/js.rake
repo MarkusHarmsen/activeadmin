@@ -12,7 +12,7 @@ namespace :js do
 
     # The base.js file requires jquery. We don't need jquery to
     # compile the assets, however Sprockets will try to look it up
-    # and raise an exception. Insteaad, we move the file out of the directory
+    # and raise an exception. Instead, we move the file out of the directory
     # then put it back after we compile.
     base_js = File.join(js_dir, "base.js")
     tmp_base_js = File.join(root_dir, "base.js")
